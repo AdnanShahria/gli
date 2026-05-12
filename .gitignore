@@ -1,7 +1,7 @@
 node_modules/
 .wrangler/
-functions/
-dist/
+/functions/
+/dist/
 frontend/dist/
 .env
 .env.local
