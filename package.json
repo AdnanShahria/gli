@@ -1,0 +1,14 @@
+{
+  "name": "gli",
+  "version": "1.0.0",
+  "description": "Green Liability Initiative - MVP",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix frontend",
+    "dev:full": "node prepare.js && wrangler pages dev --proxy 5173 -- npm run dev --prefix frontend",
+    "build": "node prepare.js && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "wrangler": "^4.90.1"
+  }
+}
